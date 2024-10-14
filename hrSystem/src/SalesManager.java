@@ -2,11 +2,14 @@
 
 public class SalesManager extends SalesRep {
     double salesbyteam;
-    public SalesManager(String firstName, String lastName, int registration, int age, int daysWorked, int vacationDaysTaken,
-            double salary, int yearWorked, double salesMade, double salesbyteam) {
-        super(firstName, lastName, registration, age, daysWorked, vacationDaysTaken, salary, yearWorked,salesMade);
-        this.salesbyteam=salesbyteam;
-            }
+    
+    public SalesManager(String firstName, String lastName, int registration, int age, int daysWorked,
+            int vacationDaysTaken, double salary, int yearWorked, String UserName, String passWord, double salesMade,
+            double salesbyteam) {
+        super(firstName, lastName, registration, age, daysWorked, vacationDaysTaken, salary, yearWorked, UserName,
+                passWord, salesMade);
+        this.salesbyteam = salesbyteam;
+    }
     //HashMap <int, SalesRep> salesTeam = new HashMap<>();
     @Override
     public void profileVisit() {
